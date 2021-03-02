@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home >> Sebastian Muntean Photography</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <a href="index.html"><h1>Sebastian Muntean</h1></a>
+    <ul class="butoane">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="portofolio.html">PORTOFOLIO</a></li>
+        <li><a href="stories.html">STORIES</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+  <div class="pozebutoane">    
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="poza1.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="poza2.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="poza3.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="poza4.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="poza5.jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="poza6.jpg" style="width:100%">
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="poza7.jpg" style="width:100%">
+          </div>
+          
+          <div class="mySlides fade">
+            <img src="poza8.jpg" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+              <img src="poza9.jpg" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+              <img src="poza10.jpg" style="width:100%">
+          </div>
+        </div>
+        <br>
+        
+        <div class="controlsdot" >
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span>
+        </div>
+  </div>
+  <div class="socialmedia">
+      <a href="https://www.facebook.com/sebastianmunteanphotographer"><img src="facebookicon.png" alt="Facebook" ></a>
+      <a href="https://www.instagram.com/sebastian.muntean13/"><img src="instagramicon.jpg" alt="Instagram" ></a>
+      <a href="https://www.vimeo.com/sebastianmuntean/"><img src="vimeoicon.png" alt="Vimeo" ></a>
+  </div>
+  <div class="siteinfo">
+    <p>Copyright © 2020 Sebastian Muntean</p>
+  </div>
+            <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>   
+   
+</body>
+</html>
